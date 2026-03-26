@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/ebhs-memory/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>艾宾浩斯记忆</title>
+    <script>
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/ebhs-memory/assets/index-DsM4o8t8.js"></script>
+    <link rel="stylesheet" crossorigin href="/ebhs-memory/assets/index-9xWBEG1n.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
